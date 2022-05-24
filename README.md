@@ -158,7 +158,7 @@ the first SD card partition are "boot.scr", "image.ub", and "system.dtb".
    size.  To fully use the 16 GByte or bigger SD card, utilize the
    "build-swap.sh" script located in the "/root/Scripts" directory.  To
    increase the Linux partition size and create the swap file, run the
-   command ```"build-swap.sh -e"```` using a terminal from the "/root/scripts"
+   command ```"build-swap.sh -e"``` using a terminal from the "/root/scripts"
    directory.  The "-e" option tells the script to increase the Linux
    partition to fill the rest of the available space on the SD card.
    
