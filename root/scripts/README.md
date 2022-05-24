@@ -16,7 +16,7 @@ In summary, once booted for the first time, run the following from the /root/scr
 
 You will need a RFSoC4x2 Rev. B to run the default image provided on-line.  To fully utilize the Linux system on the RFSoC4x2, you will need the following:
 
- * A 12V 2.5A USB power supply that plugs into the POWER jack.
+ * A 12V 5A power supply that plugs into the POWER jack.
 
  * An active Ethernet connection to the ETHERNET port.
 
@@ -25,7 +25,7 @@ Some of the install scripts require a network connection to run properly.  The s
 
 ### Installing Options
 
-There are scripts for setting up some options included.  The scripts include:
+Scripts for setting up some options are included.  The scripts include:
 
  * build-swap.sh: Builds a swap file and extends the Linux partition to the maximum size of the SD card when using the -e option.  This script is described above in the "Getting Started" section.
 
