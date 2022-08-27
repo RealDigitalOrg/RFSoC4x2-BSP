@@ -63,6 +63,7 @@ The simple way to build PetaLinux is to use one of the checked in BSPs in the "b
    where \<path to BSP file\> is the path to the appropriate BSP file in 
    "bsp\_releases".   
  - Use "cd" to enter the "RFSoC4x2_BSP" directory that was just created by the above step.
+ - Run the ```"petalinux-config --silentconfig"``` command to initialize the PetaLinux configuration.
  - Run the ```"petalinux-build"``` command to build the PetaLinux system.  This
    step will take from several minutes and possibly more than an hour depending on
    the speed of the internet connection and the speed of the PC.
