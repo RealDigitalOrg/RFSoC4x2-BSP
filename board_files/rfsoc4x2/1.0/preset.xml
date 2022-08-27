@@ -77,7 +77,7 @@
 		<user_parameter name="CONFIG.PSU__DDRC__RANK_ADDR_COUNT" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__BG_ADDR_COUNT" value="1"/>
 		<user_parameter name="CONFIG.PSU__DDRC__BANK_ADDR_COUNT" value="2"/>
-		<user_parameter name="CONFIG.PSU__DDRC__ROW_ADDR_COUNT" value="17"/>
+		<user_parameter name="CONFIG.PSU__DDRC__ROW_ADDR_COUNT" value="16"/>
 		<user_parameter name="CONFIG.PSU__DDRC__COL_ADDR_COUNT" value="10"/>
 		<user_parameter name="CONFIG.PSU__DDRC__CL" value="16"/>
 		<user_parameter name="CONFIG.PSU__DDRC__CWL" value="12"/>
