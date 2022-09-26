@@ -39,7 +39,7 @@
 	dr_mode = "peripheral";
 	snps,usb3_lpm_capable;
 	phy-names = "usb3-phy";
-	phys = <&lane2 PHY_TYPE_USB3 0 1 100000000>;
+	/* phys = <&lane2 PHY_TYPE_USB3 0 1 100000000>; */
 	maximum-speed = "super-speed";
 };
 
@@ -54,14 +54,41 @@
 	dr_mode = "host";
 	snps,usb3_lpm_capable;
 	phy-names = "usb3-phy";
-	phys = <&lane3 PHY_TYPE_USB3 1 1 100000000>;
+	/* phys = <&lane3 PHY_TYPE_USB3 1 1 100000000>; */
 	maximum-speed = "super-speed";
 };
 
 &spi1 {
 	spidev@0 {
-		compatible = "spidev";
+		/* compatible = "linux,spidev"; */
+		compatible = "rohm,dh2228fv";
 		reg = <0>;
 		spi-max-frequency = <500000>;
 	};
+};
+
+&axi_gpio_0 {
+	gpio-line-names = "SW0", "SW1", "SW2", "SW3",
+			  "LED0", "LED1", "LED2", "LED3";
+};
+
+&axi_gpio_1 {
+	gpio-line-names = "PMOD0_0", "PMOD0_1", "PMOD0_2", "PMOD0_3",
+			  "PMOD0_4", "PMOD0_5", "PMOD0_6", "PMOD0_7",
+			  "PMOD1_0", "PMOD1_1", "PMOD1_2", "PMOD1_3",
+			  "PMOD1_4", "PMOD1_5", "PMOD1_6", "PMOD1_7";
+};
+
+&axi_gpio_2 {
+	gpio-line-names = "PMOD01_0", "PMOD01_1", "PMOD01_2", "PMOD01_3",
+			  "PMOD01_4", "PMOD01_5";
+};
+
+&axi_gpio_3 {
+	gpio-line-names = "RGB0_R", "RGB0_G", "RGB0_B",
+			  "RGB1_R", "RGB1_G", "RGB1_B";
+};
+
+&axi_gpio_4 {
+	gpio-line-names = "PB0", "PB1", "PB2", "PB3", "BTN9";
 };
