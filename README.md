@@ -17,7 +17,7 @@ implementation presented here for the RFSoC4x2 provides a smaller set of board
 functionality than is provided by the PYNQ release.
 
 ## Requirements
- - Vivado 2020.2 loaded and operational.  Newer versions may work, but there may be some porting effort required.
+ - Vivado 2022.1 loaded and operational.  Newer versions may work, but there may be some porting effort required.
  - Windows PC or Linux PC for Vivado.
  - Linux PC for PetaLinux due to PetaLinux limitations.
  - A 16 GByte, or larger, microSD FLASH card to boot Linux.   It is recommended one use a Class 10 microSD card or better.
@@ -114,7 +114,7 @@ the first SD card partition are "boot.scr", "image.ub", and "system.dtb".
 ## Build SD Card
 1. Download the Debian Buster image from:
  
-     <https://allterrainsw.com/wp-content/rfsoc4x2_24May2022.img.gz>
+     [rfsoc4x2_24May2022.img.gz](https://1drv.ms/u/s!AiQ7D3y8DClQgqsrOqQlciZWPijBJg?e=ByIGih)
      
 2. Decompress the image file.
    - For Linux, "gunzip rfsoc4x2_24May2022.img.gz".
