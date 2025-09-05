@@ -45,12 +45,13 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
-# <./myproj/project_1.xpr> in the current working folder.
+# <./hw/hw.xpr> in the current working folder.
 
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
-   create_project project_1 myproj -part xczu48dr-ffvg1517-2-e
+   create_project hw hw -part xczu48dr-ffvg1517-2-e
    set_property BOARD_PART realdigital.org:rfsoc4x2:part0:1.0 [current_project]
+   set_property target_language VHDL [current_project]
 }
 
 
