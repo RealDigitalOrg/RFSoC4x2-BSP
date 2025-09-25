@@ -17,7 +17,7 @@ implementation presented here for the RFSoC4x2 provides a smaller set of board
 functionality than is provided by the PYNQ release.
 
 ## Requirements
- - Vivado 2022.1 loaded and operational.  Newer versions may work, but there may be some porting effort required.
+ - Vivado 2024.1 loaded and operational.  Other versions may work, but there may be some porting effort required.
  - Windows PC or Linux PC for Vivado.
  - Linux PC for PetaLinux due to PetaLinux limitations.
  - A 16 GByte, or larger, microSD FLASH card to boot Linux.   It is recommended one use a Class 10 microSD card or better.
